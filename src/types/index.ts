@@ -56,23 +56,3 @@ export interface Score {
   scoredAt: string;
 }
 
-
-
-
-export type SubmissionStatus = 'draft' | 'submitted' | 'screening' | 'top10' | 'finalist' | 'rejected';
-
-export interface Submission extends SubmissionDraft {
-  status: SubmissionStatus;
-  submittedAt?: string;
-}
-
-export interface Score {
-  id: string;
-  submissionId: string;
-  judgeId: string;
-  durasiProgram: number;
-  backgroundProgram: number;
-  dampakProgram: number;
-  notes: string;
-  scoredAt: string;
-}

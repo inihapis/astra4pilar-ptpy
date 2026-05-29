@@ -242,34 +242,7 @@ export default function RegisterPage() {
                   placeholder="Pilih atau ketik grup Astra..."
                 />
               </div>
-              <div>
-                <RequiredLabel>Durasi Program Berjalan</RequiredLabel>
-                <select name="durasiProgram" value={draft?.durasiProgram || ''} onChange={handleChange} className={inputClass}>
-                  <option value="">Pilih Durasi...</option>
-                  <option value="<1">&lt; 1 tahun</option>
-                  <option value="1-3">1–3 tahun</option>
-                  <option value="3-5">3–5 tahun</option>
-                  <option value=">5">&gt; 5 tahun</option>
-                </select>
-              </div>
-              <div>
-                <RequiredLabel>Status Legalitas</RequiredLabel>
-                <select name="statusLegalitas" value={draft?.statusLegalitas || ''} onChange={handleChange} className={inputClass}>
-                  <option value="">Pilih Status...</option>
-                  <option value="berbadan_hukum">Berbadan Hukum</option>
-                  <option value="belum_berbadan_hukum">Belum Berbadan Hukum</option>
-                </select>
-              </div>
-              <div>
-                <RequiredLabel>Jumlah Penerima Manfaat</RequiredLabel>
-                <select name="jumlahPenerimaManfaat" value={draft?.jumlahPenerimaManfaat || ''} onChange={handleChange} className={inputClass}>
-                  <option value="">Pilih Range...</option>
-                  <option value="1-10">1–10 orang</option>
-                  <option value="11-50">11–50 orang</option>
-                  <option value="51-100">51–100 orang</option>
-                  <option value=">100">&gt; 100 orang</option>
-                </select>
-              </div>
+
             </div>
 
             <div className="pt-4 border-t border-gray-100 space-y-5">
@@ -323,9 +296,6 @@ export default function RegisterPage() {
                   <h3 className="font-bold text-gray-800 text-base mb-3">3. Data Program</h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div><span className="text-gray-500 block">Grup Astra</span><span className="font-medium">{draft?.grupAstra || '-'}</span></div>
-                    <div><span className="text-gray-500 block">Durasi</span><span className="font-medium">{draft?.durasiProgram || '-'}</span></div>
-                    <div><span className="text-gray-500 block">Status Legalitas</span><span className="font-medium capitalize">{draft?.statusLegalitas?.replace('_', ' ') || '-'}</span></div>
-                    <div><span className="text-gray-500 block">Penerima Manfaat</span><span className="font-medium">{draft?.jumlahPenerimaManfaat || '-'}</span></div>
                     <div className="col-span-2">
                       <span className="text-gray-500 block">Latar Belakang</span>
                       <p className="font-medium whitespace-pre-wrap mt-1 text-gray-800 bg-white p-3 border rounded-md">{draft?.narasiBackground || '-'}</p>
