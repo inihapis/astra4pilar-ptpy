@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-astra-blue: #00529C;
+  --color-astra-light-blue: #E6F0F9;
+  --color-astra-gray: #F5F7FA;
+  --color-astra-text: #333333;
+}
+
+body {
+  background-color: var(--color-astra-gray);
+  color: var(--color-astra-text);
+  font-family: 'Inter', system-ui, sans-serif;
+}
