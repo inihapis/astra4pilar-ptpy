@@ -34,7 +34,7 @@ export default function PublicLayout() {
       </main>
       <footer className="bg-gray-50 border-t py-8 mt-auto">
         <div className="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} Astra Impact Awards Prototype
+          &copy; {new Date().getFullYear()} Lomba 4 Pilar Prototype
         </div>
       </footer>
     </div>

@@ -11,7 +11,7 @@ export default function LandingPage() {
   return (
     <div className="flex flex-col items-center">
       <section className="w-full bg-[var(--color-astra-blue)] text-white py-20 px-4 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Astra Impact Awards</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Lomba 4 Pilar</h1>
         <p className="text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto mb-8">
           Apresiasi untuk program binaan yang memberikan dampak sosial terbaik bagi masyarakat.
         </p>

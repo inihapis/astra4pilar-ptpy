@@ -1,6 +1,6 @@
-# Astra Impact Awards - 4 Pilar Prototype
+# Lomba 4 Pilar Prototype
 
-Prototype aplikasi registrasi dan penilaian Astra Impact Awards (4 Pilar). Aplikasi ini dibangun dengan React (Vite), Tailwind CSS v4, Zustand, dan React Router v6.
+Prototype aplikasi registrasi dan penilaian Lomba 4 Pilar. Aplikasi ini dibangun dengan React (Vite), Tailwind CSS v4, Zustand, dan React Router v6.
 
 ## Cara Menjalankan
 

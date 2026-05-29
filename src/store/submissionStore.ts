@@ -10,11 +10,13 @@ interface SubmissionState {
   addScore: (score: Omit<Score, 'id' | 'scoredAt'>) => void;
 }
 
+import { dummySubmissions, dummyScores } from '../data/dummySubmissions';
+
 export const useSubmissionStore = create<SubmissionState>()(
   persist(
     (set) => ({
-      submissions: [],
-      scores: [],
+      submissions: dummySubmissions,
+      scores: dummyScores,
       addSubmission: (sub) =>
         set((state) => ({
           submissions: [

@@ -7,6 +7,11 @@ import RegisterPage from './pages/RegisterPage';
 import AdminDashboard from './pages/AdminDashboard';
 import JudgeDashboard from './pages/JudgeDashboard';
 
+import AdminSubmissions from './pages/AdminSubmissions';
+import AdminSubmissionDetail from './pages/AdminSubmissionDetail';
+import JudgeHistory from './pages/JudgeHistory';
+import JudgeScoringPage from './pages/JudgeScoringPage';
+
 function App() {
   return (
     <BrowserRouter>
@@ -21,11 +26,15 @@ function App() {
         {/* Admin Routes */}
         <Route element={<DashboardLayout allowedRole="admin" />}>
           <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/submissions" element={<AdminSubmissions />} />
+          <Route path="/admin/submissions/:id" element={<AdminSubmissionDetail />} />
         </Route>
 
         {/* Judge Routes */}
         <Route element={<DashboardLayout allowedRole="judge" />}>
           <Route path="/judge" element={<JudgeDashboard />} />
+          <Route path="/judge/history" element={<JudgeHistory />} />
+          <Route path="/judge/score/:id" element={<JudgeScoringPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
